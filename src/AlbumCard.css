@@ -1,0 +1,62 @@
+.album-card {
+  background-color: #d4c9e4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.album-card:hover {
+  transform: translateY(-5px);
+}
+
+.album-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-bottom: 1px solid #dddfe2;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1; /* Allows the content to fill the remaining space */
+  justify-content: space-between;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #1c1e21;
+  font-size: 1.5rem;
+}
+
+.card-content .album-name {
+  font-style: italic;
+  color: #606770;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.card-content .details-button {
+  background-color: #e79e97;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Button takes full width of the padding area */
+  margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.card-content .details-button:hover {
+  background-color: #166fe5;
+}
